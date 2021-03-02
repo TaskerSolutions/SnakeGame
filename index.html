@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Tell IE to use the most current layout engine-->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive site doesn't get zoomed out by mobile phone's browser.-->
+	<meta name="description" content="Snake - A different take on the classic game">
+	<meta name="keywords" content="html css javascript jquery website design development snake game"> <!-- for SEO. avoid stuffing (web site website websites) -->
+	<meta name="author" content="Harry Tasker">
+	<!-- Following is facebook sharing crieria. Description helps click through rate and conversions -->
+	<meta property="og:image" content="media/screenshot.jpg" /> <!-- image displayed in FB links -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://taskersolutions.com/snakegame/index.html" />
+	<meta property="og:description" content="A different take on the classic game." />
+	
+	<title>Snake Game</title>
+	
+	<!-- Load htmlshiv and Respond.js for old IE versions so we can use
+     HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	
+	<link rel="dns-prefetch" href="//fonts.googleapis.com"> <!-- load google fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Gloria Hallelujah' rel='stylesheet'>
+	<link rel="shortcut icon" type="image/png" href="media/snake_face_icon.png"> <!-- favicon -->
+	
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/effects.css">
+	<link rel="stylesheet" href="css/mediaqueries.css">	
+	
+</head>
+
+<body>
+	<main>
+	
+		<div class="title-block ready reveal-in">
+			<h1>Snake</h1>
+			<h2>A different take on the classic game</h2>
+			<btn class="button" id="start">New Game</btn>	
+		</div>
+
+		<canvas id="game" width="500" height="500"></canvas>
+
+		<div class="score-div">Score: <span id="score">0</span></div>
+		
+	</main>
+	
+	<footer>
+		Created by Harry Tasker | Visit
+		<a href="http://www.taskersolutions.com/portfolio">TaskerSolutions.com</a> to see other works.
+	</footer>
+		
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="script/script.js"></script>
+	
+</body>
+
+</html>

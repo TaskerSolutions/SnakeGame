@@ -1,0 +1,52 @@
+/* original values are designed for small mobile phones */
+
+/* --------------- 480px (bigger than portrait phone) --------------- */
+@media only screen and (min-width: 480px) and (orientation: portrait) {
+}
+
+
+
+
+/* --------------- 820px (bigger than landscape phone) --------------- */
+@media only screen and (min-width: 820px) and (orientation: landscape) {
+}
+
+
+
+
+/* --------------- 768px (Tablets) --------------- */
+@media only screen and (min-width: 768px) {
+	.title-block h1 {font-size: 2.8em;} /* original 2.5em */
+	.title-block h2 {font-size: 1.4em;} /* original 1.2em */
+}
+
+
+
+
+/* --------------- 992px (laptops) --------------- */
+@media only screen and (min-width: 992px) {
+	.title-block h1 {font-size: 3em;} /* original 2.5em */
+	.title-block h2 {font-size: 1.5em;} /* original 1.2em */
+	.button {font-size: 1em;} /* original 0.8em */
+}
+
+@media only screen and (min-width: 992px)  and (orientation: landscape) {
+}
+
+@media only screen and (min-width: 992px)  and (orientation: portrait) {
+}
+
+
+
+
+/* --------------- 1312px (large desktops) --------------- */
+@media only screen and (min-width: 1312px) {
+	.title-block h1 {font-size: 3.2em;} /* original 2.5em */
+	.title-block h2 {font-size: 1.6em;} /* original 1.2em */
+}
+
+@media only screen and (min-width: 1312px) and (orientation: landscape) {
+}
+
+@media only screen and (min-width: 1312px) and (orientation: portrait) {
+}

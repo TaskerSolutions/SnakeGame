@@ -1,0 +1,22 @@
+.ready {
+  opacity:0;
+  transform: translateY(50px);
+}
+
+.active {
+  opacity:1;
+  transform: translateY(0px);
+}
+
+.reveal-in {
+  -webkit-transition: all 600ms ease-in-out;
+  -moz-transition: all 600ms ease-in-out;
+  -ms-transition: all 600ms ease-in-out;
+  -o-transition: all 600ms ease-in-out;
+  transition: all 600ms ease-in-out;
+}
+
+.button:hover {
+  background-color: #196900;
+  transform: scale(1.2);
+}
