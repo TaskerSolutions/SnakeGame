@@ -1,0 +1,103 @@
+.menu {
+	display: flex;
+    flex-wrap: nowrap;
+	margin: auto;
+	width: fit-content;
+	position: relative;
+	padding-bottom: 30px;
+}
+
+/* The dropdown container */
+.dropdown {
+	overflow: hidden;
+    font-family: Poppins, sans-serif;
+    cursor: pointer;
+    opacity: 0.9;
+    z-index: 20;
+}
+  
+/* Dropdown button */
+.dropdown .dropbtn {
+	font-size: 0.8em;
+	border: none;
+	outline: none;
+	color: white;
+    width: 200px;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit; /* Important for vertical align on mobile phones */
+	margin: 0; /* Important for vertical align on mobile phones */
+}
+  
+/* Add a background color to dropdown header on hover */
+.dropdown:hover .dropbtn {
+	background-color: #333333;
+}
+  
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	width: 200px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+  
+/* Links inside the dropdown */
+.dropdown-content div:nth-child(even) {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+    font-size: 0.7em;
+	display: block;
+	text-align: center;
+    background-color: #bebebe;
+}
+
+/* Links inside the dropdown */
+.dropdown-content div:nth-child(odd) {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+    font-size: 0.7em;
+	display: block;
+	text-align: center;
+    background-color: #cccccc;
+}
+  
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content div:hover {
+	background-color: #858585;
+}
+  
+/* Show the dropdown menu on hover using javascript */
+.dropdown-hover {
+    display: block !important;
+}
+
+/* Show the dropdown menu on hover */
+.active-div {
+	background-color: #b7ffa1 !important;
+}
+
+
+
+
+#greenBgBtn {
+	background-color: #b7ffa1;
+}
+#blueBgBtn {
+	background-color: #326aaa;
+}
+#purpleBgBtn {
+    background-color: #9249b4;
+}
+#greyBgBtn {
+	background-color: #94979b;
+}
+#whiteBgBtn {
+	background-color: #FFFFFF;
+}

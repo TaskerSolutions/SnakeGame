@@ -27,36 +27,83 @@
 	<link rel="dns-prefetch" href="//fonts.googleapis.com"> <!-- load google fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Gloria Hallelujah' rel='stylesheet'>
 	<link rel="shortcut icon" type="image/png" href="media/snake_face_icon.png"> <!-- favicon -->
-	
+
+	<link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel='stylesheet' />
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/dropdown.css">
 	<link rel="stylesheet" href="css/effects.css">
 	<link rel="stylesheet" href="css/mediaqueries.css">	
 	
+
 </head>
 
 <body>
-	<main>
+	<main class="ready reveal-in">
 	
-		<div class="title-block ready reveal-in">
+		<div class="title-block">
 			<h1>Snake</h1>
-			<h2>A different take on the classic game</h2>
-			<btn class="button" id="start">New Game</btn>	
+			<p>Press an arrow key to start</p>
 		</div>
 
-		<canvas id="game" width="500" height="500"></canvas>
+		<div class="menu">
+			<div class="dropdown" id="resize">
+				<button class="dropbtn">Change Size</button>
+				<div class="dropdown-content" id="resize-content">
+				  	<div id="20SizeBtn">20x20</div>
+				 	 <div id="30SizeBtn" class="active-div">30x30</div>
+				 	 <div id="40SizeBtn">40x40</div>
+				 	 <div id="50SizeBtn">50x50</div>
+				 	 <div id="60SizeBtn">60x60</div>
+				 	 <div id="70SizeBtn">70x70</div>
+				 	 <div id="80SizeBtn">80x80</div>
+				 	 <div id="90SizeBtn">90x90</div>
+				 	 <div id="100SizeBtn">100x100</div>
+				</div>
+			</div>
+			<div class="dropdown" id="speed">
+				<button class="dropbtn">Change Speed</button>
+				<div class="dropdown-content" id="speed-content">
+				  	<div id="slowSpeedBtn">Slow</div>
+					<div id="mediumSpeedBtn" class="active-div">Medium</div>
+					<div id="fastSpeedBtn">Fast</div>
+					<div id="extremeSpeedBtn">Extreme</div>
+					<div id="absurdSpeedBtn">Absurd</div>
+				</div>
+			</div>
+			<div class="dropdown" id="bg-color">
+				<button class="dropbtn">Change Background</button>
+				<div class="dropdown-content" id="bg-color-content">
+				  	<div id="greenBgBtn">Green</div>
+					<div id="blueBgBtn">blue</div>
+					<div id="purpleBgBtn">purple</div>
+					<div id="greyBgBtn">grey</div>
+					<div id="whiteBgBtn">white</div>
+				</div>
+			</div>
+		</div>
+
+		<canvas id="game"></canvas>
+
+		<div id="dialog">
+			<p id="dialog-message"></p>
+		</div>
 
 		<div class="score-div">Score: <span id="score">0</span></div>
+		<div class="score-div">High Score: <span id="highscore">0</span></div>
 		
 	</main>
 	
 	<footer>
 		Created by Harry Tasker | Visit
-		<a href="http://www.taskersolutions.com/portfolio.html">TaskerSolutions.com</a> to see my other projects.
+		<a href="http://www.taskersolutions.com/portfolio.html">TaskerSolutions</a> to see my other projects.
 	</footer>
 		
-
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="script/script.js"></script>
+	<script src="script/dropdown.js"></script>
+	<!-- scripts for dialog box-->
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+ 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	
 </body>
 
