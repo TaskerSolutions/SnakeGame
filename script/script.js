@@ -155,7 +155,7 @@ function drawSnake() {
 	//copy snake array without first element to body variable
 	var body = snake.slice(1);
 	console.log(body);
-	body.forEach(drawSnakePart)
+	body.forEach(drawSnakePart);
 
 
 	var head = snake[0];
