@@ -11,10 +11,6 @@ $('#30SizeBtn').bind('click', function() {resizeCanvas(3, this);});
 $('#40SizeBtn').bind('click', function() {resizeCanvas(4, this);});
 $('#50SizeBtn').bind('click', function() {resizeCanvas(5, this);});
 $('#60SizeBtn').bind('click', function() {resizeCanvas(6, this);});
-$('#70SizeBtn').bind('click', function() {resizeCanvas(7, this);});
-$('#80SizeBtn').bind('click', function() {resizeCanvas(8, this);});
-$('#90SizeBtn').bind('click', function() {resizeCanvas(9, this);});
-$('#100SizeBtn').bind('click', function() {resizeCanvas(10, this);});
 
 function resizeCanvas(newScale, id) {
 	$("#resize div").removeClass("active-div");
@@ -37,10 +33,9 @@ $(document).ready(function () {
 });
 
 $('#slowSpeedBtn').bind('click', function() {changeSpeed(20, this);});
-$('#mediumSpeedBtn').bind('click', function() {changeSpeed(10, this);});
-$('#fastSpeedBtn').bind('click', function() {changeSpeed(8, this);});
-$('#extremeSpeedBtn').bind('click', function() {changeSpeed(4, this);});
-$('#absurdSpeedBtn').bind('click', function() {changeSpeed(1, this);});
+$('#mediumSpeedBtn').bind('click', function() {changeSpeed(12, this);});
+$('#fastSpeedBtn').bind('click', function() {changeSpeed(6, this);});
+$('#extremeSpeedBtn').bind('click', function() {changeSpeed(1, this);});
 
 function changeSpeed(newSpeed, id) {
 	$("#speed div").removeClass("active-div");
