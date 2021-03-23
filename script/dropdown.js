@@ -1,3 +1,6 @@
+var colorOne = "#b7ffa1";
+var colorTwo = "#78c262";
+
 // resize buttons
 $(document).ready(function () {
     $("#resize").hover(function () {
