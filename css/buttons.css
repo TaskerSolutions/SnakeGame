@@ -1,0 +1,53 @@
+.control-container {
+    padding-top: 10px;
+    width: 150px;
+    margin: auto;
+}
+
+.control-button {
+    background: rgb(165, 165, 165);
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    color: black;
+    cursor: pointer;
+}
+
+#left-btn {
+}
+
+#up-btn {
+}
+
+#down-btn {
+}
+
+#right-btn {
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+  
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+  
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+  
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+  
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}

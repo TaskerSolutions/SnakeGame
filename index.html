@@ -33,7 +33,8 @@
 	<link rel="stylesheet" href="css/dropdown.css">
 	<link rel="stylesheet" href="css/effects.css">
 	<link rel="stylesheet" href="css/mediaqueries.css">
-	<link rel="stylesheet" href="css/dialog.css">	
+	<link rel="stylesheet" href="css/buttons.css">
+	<link rel="stylesheet" href="css/dialog.css">
 	
 
 </head>
@@ -43,7 +44,6 @@
 	
 		<div class="title-block">
 			<img src="media/header_white.png">
-			<p>Press an arrow key to start</p>
 		</div>
 
 		<div class="menu">
@@ -80,12 +80,22 @@
 
 		<canvas id="game"></canvas>
 
-		<div id="dialog">
-			<p id="dialog-message"></p>
-		</div>
+		<table class="control-container">
+			<tr>
+				<td></td>
+				<td id="up-btn" class="control-button"><i class="arrow up"></i></td>
+			</tr>
+			<tr>
+				<td id="left-btn" class="control-button"><i class="arrow left"></i></td>
+				<td id="down-btn" class="control-button"><i class="arrow down"></i></td>
+				<td id="right-btn" class="control-button"><i class="arrow right"></i></td>
+			</tr>
+		</table>
 
 		<div class="score-div">Score: <span id="score">0</span></div>
 		<div class="score-div">High Score: <span id="highscore">0</span></div>
+
+		<div id="dialog"><p id="dialog-message"></p></div>
 		
 	</main>
 	

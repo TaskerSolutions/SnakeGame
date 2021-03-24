@@ -30,6 +30,10 @@ function newGame() {
 
 //listen for key presses (also starts game)
 document.addEventListener("keydown", changeDirection);
+$("#left-btn").on("click touchstart", function() {changeDirection("left")});
+$("#up-btn").on("click touchstart", function() {changeDirection("up")});
+$("#right-btn").on("click touchstart", function() {changeDirection("right")});
+$("#down-btn").on("click touchstart", function() {changeDirection("down")});
 
 
 // start game
@@ -91,7 +95,6 @@ function isGameOver() {
 			 deathBy = "yourself";
 			return true; 
 		}
-		
 	}
 	//check if snake touches wall
 	const hitLeftWall = snake[0].x < 0;
@@ -105,24 +108,16 @@ function isGameOver() {
 	return hitLeftWall || hitRightWall || hitTopWall || hitBottomWall
 }
 
-
 //change direction event triggered by arrow keys
 function changeDirection(event) {
 	const LEFT_KEY = 37;
 	const RIGHT_KEY = 39;
 	const UP_KEY = 38;
 	const DOWN_KEY = 40; 
-
 	const keyPressed = event.keyCode;
 
-	//start game when arrow key first pressed
-	if (gameInProgress == false &&
-		(keyPressed === LEFT_KEY ||
-		keyPressed ===  UP_KEY ||
-		keyPressed ===  RIGHT_KEY ||
-		keyPressed ===  DOWN_KEY)) {
-		startGame();
-	}
+	//start game when key first pressed
+	if (!gameInProgress) {startGame();}
 
 	// prevent snake from reversing
 	if (changingDirection) return;
@@ -133,23 +128,23 @@ function changeDirection(event) {
 	const goingRight = dx === speed;
 	const goingLeft = dx === -speed; 
 
-	if (keyPressed === LEFT_KEY && !goingRight) {
-		event.preventDefault();
+	if ((keyPressed === LEFT_KEY || event == "left") && !goingRight) {
+		if (keyPressed === LEFT_KEY) {event.preventDefault();}
 		dx = -speed;
 		dy = 0;
 	} 
-	if (keyPressed === UP_KEY && !goingDown) {
-		event.preventDefault();
+	if ((keyPressed === UP_KEY || event == "up") && !goingDown) {
+		if (keyPressed === UP_KEY) {event.preventDefault();}
 		dx = 0;
 		dy = -speed;
 	} 
-	if (keyPressed === RIGHT_KEY && !goingLeft) {
-		event.preventDefault();
+	if ((keyPressed === RIGHT_KEY || event == "right") && !goingLeft) {
+		if (keyPressed === RIGHT_KEY) {event.preventDefault();}
 		dx = speed;
 		dy = 0;
 	} 
-	if (keyPressed === DOWN_KEY && !goingUp) {
-		event.preventDefault();
+	if ((keyPressed === DOWN_KEY || event == "down") && !goingUp) {
+		if (keyPressed === DOWN_KEY) {event.preventDefault();}
 		dx = 0;
 		dy = speed;
 	}
