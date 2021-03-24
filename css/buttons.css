@@ -1,13 +1,13 @@
 .control-container {
     padding-top: 10px;
-    width: 150px;
+    width: 210px;
     margin: auto;
 }
 
 .control-button {
     background: rgb(165, 165, 165);
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     border: 1px solid black;
     color: black;
     cursor: pointer;
